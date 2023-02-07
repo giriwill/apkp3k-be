@@ -10,6 +10,8 @@ const Laporan = db.define('laporan', {
     tahun: DataTypes.STRING,
     hari: DataTypes.STRING,
     durasi: DataTypes.STRING,
+    dari: DataTypes.STRING,
+    sampai: DataTypes.STRING,
     kegiatan: DataTypes.TEXT,
     foto1: DataTypes.STRING,
     foto2: DataTypes.STRING,
