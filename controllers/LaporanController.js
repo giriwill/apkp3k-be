@@ -24,7 +24,10 @@ export const getHitungLaporan = async (req, res) => {
                 'nip',
                 [Sequelize.fn('count', Sequelize.col('nip')), 'count'], 
             ],
-            group: ['nip']
+            group: ['nip'],
+            order:[
+                ['count','desc']
+            ]
         })
         res.json(response);
     } catch (error) {
